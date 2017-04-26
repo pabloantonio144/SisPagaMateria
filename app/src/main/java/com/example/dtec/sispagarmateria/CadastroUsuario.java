@@ -7,7 +7,7 @@ import android.widget.Spinner;
 
 public class CadastroUsuario extends AppCompatActivity {
 
-    private Spinner spnCursos;
+    Spinner cursos;
 
     private ArrayAdapter<String> adpCursos;
 
@@ -16,14 +16,18 @@ public class CadastroUsuario extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro_usuario);
 
+        cursos = (Spinner) findViewById(R.id.spnCursos);
+
         adpCursos = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
         adpCursos.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spnCursos.setAdapter(adpCursos);
+        cursos.setAdapter(adpCursos);
 
         adpCursos.add("Administração");
         adpCursos.add("Enfermagem");
         adpCursos.add("Direito");
         adpCursos.add("Medicina");
         adpCursos.add("Sistema de Informação");
+
+
     }
 }

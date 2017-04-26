@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NOME"
+        android:textStyle="bold"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
@@ -30,6 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CPF"
+        android:textStyle="bold"
         android:id="@+id/textView2"
         android:layout_below="@+id/editText"
         android:layout_alignParentStart="true"
@@ -49,6 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MATRICULA"
+        android:textStyle="bold"
         android:id="@+id/textView3"
         android:layout_below="@+id/editText2"
         android:layout_alignParentStart="true"
@@ -69,5 +72,19 @@
         android:layout_below="@+id/editText3"
         android:layout_alignParentStart="true"
         android:layout_marginTop="29dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CADASTRAR"
+        android:textStyle="bold"
+        android:id="@+id/button2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp"
+        android:background="#0909d8"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:onClick="cadastroUsuarios" />
 
 </RelativeLayout>
